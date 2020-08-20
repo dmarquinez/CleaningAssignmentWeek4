@@ -51,9 +51,33 @@ I followed the next steps:
 
 ## Output
 
-The new data set is in [`averages.txt`]() with the averages of the mean
-and the standard deviation of each subject and activity. The details of
-each variable are in the [`CodeBook.md`]() file.
+The new data set is in
+[`averages.txt`](https://github.com/dmarquinez/CleaningAssignmentWeek4/blob/master/averages.txt)
+with the averages of the mean and the standard deviation of each subject
+and activity. The details of each variable are in the
+[`CodeBook.md`](https://github.com/dmarquinez/CleaningAssignmentWeek4/blob/master/CodeBook.md)
+file.
+
+## Other files in this repository
+
+In this repository you can find:  
+\*
+[`README.md`](https://github.com/dmarquinez/CleaningAssignmentWeek4/blob/master/README.md)
+: This file that you are reading.  
+\*
+[`README.Rmd`](https://github.com/dmarquinez/CleaningAssignmentWeek4/blob/master/README.Rmd)
+: RMarkdown file to generate
+[`README.md`](https://github.com/dmarquinez/CleaningAssignmentWeek4/blob/master/README.md).  
+\*
+[`CodeBook.md`](https://github.com/dmarquinez/CleaningAssignmentWeek4/blob/master/CodeBook.md)
+: Info about the variables along with units, values, etc.  
+\*
+[`CodeBook.Rmd`](https://github.com/dmarquinez/CleaningAssignmentWeek4/blob/master/CodeBook.Rmd)
+: RMarkdown file to generate
+[`CodeBook.md`](https://github.com/dmarquinez/CleaningAssignmentWeek4/blob/master/CodeBook.md).  
+\*
+[`run_analysis.R`](https://github.com/dmarquinez/CleaningAssignmentWeek4/blob/master/run_analysis.R):
+**The script.**
 
 ## Sources
 

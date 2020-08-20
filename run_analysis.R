@@ -47,5 +47,5 @@ run <- function(){
   averages <- aggregate(Data[,1:(length(Data)-2)]
               , list(subject=Data$subject,activity=Data$activity)
               , mean)
-  write.table(averages,file = "averages.txt")
+  write.table(averages,file = "averages.txt",row.names = FALSE)
 }

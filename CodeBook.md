@@ -1,33 +1,456 @@
 CodeBook
 ================
 
-## GitHub Documents
+All the variables, except `subject` and `activity` are normalized and
+bounded within \[-1,1\].
 
-This is an R Markdown format used for publishing markdown documents to
-GitHub. When you click the **Knit** button all R code chunks are run and
-a markdown file (.md) suitable for publishing to GitHub is generated.
+#### \[1\] “subject”
 
-## Including Code
+**Values:** \[1,30\]
 
-You can include R code in the document as follows:
+**Description:** ID of the volunteer subject who carried the experiment.
 
-``` r
-summary(cars)
-```
+#### \[2\] “activity”
 
-    ##      speed           dist       
-    ##  Min.   : 4.0   Min.   :  2.00  
-    ##  1st Qu.:12.0   1st Qu.: 26.00  
-    ##  Median :15.0   Median : 36.00  
-    ##  Mean   :15.4   Mean   : 42.98  
-    ##  3rd Qu.:19.0   3rd Qu.: 56.00  
-    ##  Max.   :25.0   Max.   :120.00
+**Values:** \[WALKING, WALKING\_UPSTAIRS, WALKING\_DOWNSTAIRS, SITTING,
+STANDING ,LAYING\]
 
-## Including Plots
+**Description:** Activity performed by the person (subject)
 
-You can also embed plots, for example:
+#### \[3\] “timeBodyAccelerationMeanX”
 
-![](CodeBook_files/figure-gfm/pressure-1.png)<!-- -->
+**Values:** \[-1,1\]
 
-Note that the `echo = FALSE` parameter was added to the code chunk to
-prevent printing of the R code that generated the plot.
+**Description:** Mean of the time body acceleration on the X axis.
+
+#### \[4\] “timeBodyAccelerationMeanY”
+
+**Values:** \[-1,1\]
+
+**Description:** Mean of the time body acceleration on the Y axis.
+
+#### \[5\] “timeBodyAccelerationMeanZ”
+
+**Values:** \[-1,1\]
+
+**Description:** Mean of the time body acceleration on the Z axis.
+
+#### \[6\] “timeGravityAccelerationMeanX”
+
+**Values:** \[-1,1\]
+
+**Description:** Mean of the time gravity acceleration on the X axis.
+
+#### \[7\] “timeGravityAccelerationMeanY”
+
+**Values:** \[-1,1\]
+
+**Description:** Mean of the time gravity acceleration on the Y axis.
+
+#### \[8\] “timeGravityAccelerationMeanZ”
+
+**Values:** \[-1,1\]
+
+**Description:** Mean of the time gravity acceleration on the Z axis.
+
+#### \[9\] “timeBodyAccelerationJerkMeanX”
+
+**Values:** \[-1,1\]
+
+**Description:** Mean of the time body acceleration jerk signal on the X
+axis.
+
+#### \[10\] “timeBodyAccelerationJerkMeanY”
+
+**Values:** \[-1,1\]
+
+**Description:** Mean of the time body acceleration jerk signal on the Y
+axis.
+
+#### \[11\] “timeBodyAccelerationJerkMeanZ”
+
+**Values:** \[-1,1\]
+
+**Description:** Mean of the time body acceleration jerk signal on the Z
+axis.
+
+#### \[12\] “timeBodyGyroscopeMeanX”
+
+**Values:** \[-1,1\]
+
+**Description:** Mean of the time body gyroscope on the X axis.
+
+#### \[13\] “timeBodyGyroscopeMeanY”
+
+**Values:** \[-1,1\]
+
+**Description:** Mean of the time body gyroscope on the Y axis.
+
+#### \[14\] “timeBodyGyroscopeMeanZ”
+
+**Values:** \[-1,1\]
+
+**Description:** Mean of the time body gyroscope on the Z axis.
+
+#### \[15\] “timeBodyGyroscopeJerkMeanX”
+
+**Values:** \[-1,1\]
+
+**Description:** Mean of the time body gyroscope jerk signal on the X
+axis.
+
+#### \[16\] “timeBodyGyroscopeJerkMeanY”
+
+**Values:** \[-1,1\]
+
+**Description:** Mean of the time body gyroscope jerk signal on the Y
+axis.
+
+#### \[17\] “timeBodyGyroscopeJerkMeanZ”
+
+**Values:** \[-1,1\]
+
+**Description:** Mean of the time body gyroscope jerk signal on the Z
+axis.
+
+#### \[18\] “timeBodyAccelerationMagnitudeMean”
+
+**Values:** \[-1,1\]
+
+**Description:** Mean of the time body acceleration .
+
+#### \[19\] “timeGravityAccelerationMagnitudeMean”
+
+**Values:** \[-1,1\]
+
+**Description:** Mean of the time gravity.
+
+#### \[20\] “timeBodyAccelerationJerkMagnitudeMean”
+
+**Values:** \[-1,1\]
+
+**Description:** Mean of the time body acceleration jerk signal.
+
+#### \[21\] “timeBodyGyroscopeMagnitudeMean”
+
+**Values:** \[-1,1\]
+
+**Description:** Mean of the time body gyroscope .
+
+#### \[22\] “timeBodyGyroscopeJerkMagnitudeMean”
+
+**Values:** \[-1,1\]
+
+**Description:** Mean of the time body gyroscope jerk signal.
+
+#### \[23\] “freqBodyAccelerationMeanX”
+
+**Values:** \[-1,1\]
+
+**Description:** Mean of the frequency body acceleration on the X axis.
+
+#### \[24\] “freqBodyAccelerationMeanY”
+
+**Values:** \[-1,1\]
+
+**Description:** Mean of the frequency body acceleration on the Y axis
+
+#### \[25\] “freqBodyAccelerationMeanZ”
+
+**Values:** \[-1,1\]
+
+**Description:** Mean of the frequency body acceleration on the Z axis
+
+#### \[26\] “freqBodyAccelerationJerkMeanX”
+
+**Values:** \[-1,1\]
+
+**Description:** Frequency of the body acceleration jerk signal on the X
+axis.
+
+#### \[27\] “freqBodyAccelerationJerkMeanY”
+
+**Values:** \[-1,1\]
+
+**Description:** Frequency of the body acceleration jerk signal on the Y
+axis.
+
+#### \[28\] “freqBodyAccelerationJerkMeanZ”
+
+**Values:** \[-1,1\]
+
+**Description:** Frequency of the body acceleration jerk signal on the Z
+axis.
+
+#### \[29\] “freqBodyGyroscopeMeanX”
+
+**Values:** \[-1,1\]
+
+**Description:** Mean of the frequency body gyroscope on the x axis
+
+#### \[30\] “freqBodyGyroscopeMeanY”
+
+**Values:** \[-1,1\]
+
+**Description:** Mean of the frequency body acceleration on the x axis
+
+#### \[31\] “freqBodyGyroscopeMeanZ”
+
+**Values:** \[-1,1\]
+
+**Description:** Mean of the frequency body acceleration on the x axis
+
+#### \[32\] “freqBodyAccelerationMagnitudeMean”
+
+**Values:** \[-1,1\]
+
+**Description:** Frequency of the acceleration mean.
+
+#### \[33\] “freqBodyAccelerationJerkMagnitudeMean”
+
+**Values:** \[-1,1\]
+
+**Description:** Frequency of the acceleration jerk signal mean.
+
+#### \[34\] “freqBodyGyroscopeMagnitudeMean”
+
+**Values:** \[-1,1\]
+
+**Description:** Frequency of the body gyroscope mean.
+
+#### \[35\] “freqBodyGyroscopeJerkMagnitudeMean”
+
+**Values:** \[-1,1\]
+
+**Description:** Frequency of the body gyroscope jerk signal mean.
+
+#### \[36\] “timeBodyAccelerationStdX”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
+
+#### \[37\] “timeBodyAccelerationStdY”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
+
+#### \[38\] “timeBodyAccelerationStdZ”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
+
+#### \[39\] “timeGravityAccelerationStdX”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
+
+#### \[40\] “timeGravityAccelerationStdY”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
+
+#### \[41\] “timeGravityAccelerationStdZ”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
+
+#### \[42\] “timeBodyAccelerationJerkStdX”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
+
+#### \[43\] “timeBodyAccelerationJerkStdY”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
+
+#### \[44\] “timeBodyAccelerationJerkStdZ”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
+
+#### \[45\] “timeBodyGyroscopeStdX”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
+
+#### \[46\] “timeBodyGyroscopeStdY”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
+
+#### \[47\] “timeBodyGyroscopeStdZ”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
+
+#### \[48\] “timeBodyGyroscopeJerkStdX”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
+
+#### \[49\] “timeBodyGyroscopeJerkStdY”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
+
+#### \[50\] “timeBodyGyroscopeJerkStdZ”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
+
+#### \[51\] “timeBodyAccelerationMagnitudeStd”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
+
+#### \[52\] “timeGravityAccelerationMagnitudeStd”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
+
+#### \[53\] “timeBodyAccelerationJerkMagnitudeStd”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
+
+#### \[54\] “timeBodyGyroscopeMagnitudeStd”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
+
+#### \[55\] “timeBodyGyroscopeJerkMagnitudeStd”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
+
+#### \[56\] “freqBodyAccelerationStdX”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
+
+#### \[57\] “freqBodyAccelerationStdY”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
+
+#### \[58\] “freqBodyAccelerationStdZ”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
+
+#### \[59\] “freqBodyAccelerationJerkStdX”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
+
+#### \[60\] “freqBodyAccelerationJerkStdY”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
+
+#### \[61\] “freqBodyAccelerationJerkStdZ”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
+
+#### \[62\] “freqBodyGyroscopeStdX”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
+
+#### \[63\] “freqBodyGyroscopeStdY”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
+
+#### \[64\] “freqBodyGyroscopeStdZ”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
+
+#### \[65\] “freqBodyAccelerationMagnitudeStd”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
+
+#### \[66\] “freqBodyAccelerationJerkMagnitudeStd”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
+
+#### \[67\] “freqBodyGyroscopeMagnitudeStd”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
+
+#### \[68\] “freqBodyGyroscopeJerkMagnitudeStd”
+
+**Values:** \[-1,1\]
+
+**Description:** Standard deviation of the time body acceleration on the
+x axis.
